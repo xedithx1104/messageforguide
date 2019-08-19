@@ -42,7 +42,9 @@
         liff.sendMessages([{
           type: 'text',
           text: "給地陪的訊息：" + $('#message').val()
-        }])
+        }]).then(function () {
+          liff.closeWindow();
+        });
 	
       });
     }
